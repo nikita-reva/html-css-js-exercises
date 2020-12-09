@@ -57,6 +57,7 @@ body {
 }
 
 .container .btn {
+	-webkit-tap-highlight-color: transparent;
 	display: block;
 	width: 60%;
 	font-family: inherit;
