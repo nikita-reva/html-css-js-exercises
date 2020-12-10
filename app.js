@@ -1,4 +1,6 @@
 const labels = document.querySelectorAll('.form-control label')
+const clickSound = document.getElementById('click')
+const btn = document.querySelector('.btn')
 
 labels.forEach((label) => {
 	label.innerHTML = label.innerText
@@ -10,4 +12,8 @@ labels.forEach((label) => {
 				}s">${letter}</span>`
 		)
 		.join('')
+})
+
+btn.addEventListener('click', () => {
+	clickSound.play()
 })
